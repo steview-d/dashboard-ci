@@ -173,6 +173,7 @@ function show_rank_distribution(ndx) {
     dc.barChart('#rank-distribution')
         .width(350)
         .height(250)
+        .margins({ top: 10, right: 90, bottom: 30, left: 30 })
         .dimension(dim)
         .group(profByGender, 'Prof')
         .stack(asstProfByGender, 'Asst Prof')
@@ -188,8 +189,7 @@ function show_rank_distribution(ndx) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .xAxisLabel('Gender')
-        .legend(dc.legend().x(320).y(20).itemHeight(15).gap(5))
-        .margins({ top: 10, right: 100, bottom: 30, left: 30 });
+        .legend(dc.legend().x(280).y(20).itemHeight(15).gap(5));
 }
 
 
