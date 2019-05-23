@@ -192,7 +192,6 @@ function show_rank_distribution(ndx) {
         .legend(dc.legend().x(280).y(20).itemHeight(15).gap(5));
 }
 
-
 function show_service_to_salary_correlation(ndx) {
 
     var genderColors = d3.scale.ordinal()
@@ -230,7 +229,6 @@ function show_service_to_salary_correlation(ndx) {
 
 }
 
-
 function show_phd_to_salary_correlation(ndx) {
 
     var genderColors = d3.scale.ordinal()
@@ -265,5 +263,6 @@ function show_phd_to_salary_correlation(ndx) {
         .dimension(phdDim)
         .group(phdSalaryGroup)
         .margins({ top: 10, right: 50, bottom: 75, left: 75 });
+
 
 }
